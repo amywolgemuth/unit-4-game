@@ -26,7 +26,13 @@
 
   <script type="text/javascript">
 
-  var targetNumber = 53;
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+     }     
+   var targetNumber = getRandomInt(19,120);
+   console.log(targetNumber)
 
   $("#number-to-guess").text(targetNumber);
 
